@@ -41,7 +41,7 @@
                             $idr =$_GET['Id'];
                             include("conexion.php");
                             $con = conectar();
-                            $sql = "SELECT * FROM products WHERE id='$idr'";
+                            $sql = "SELECT * FROM products WHERE Id='$idr'";
                             $dat = mysqli_query($con, $sql);
                             $tabla = mysqli_fetch_array($dat);
                             ?>
